@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snacker.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/outerlogo.css?v=<?php echo time(); ?>">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg" id="navbar">
+  <div id="logo">
+            <img src="images\logo.jpg" alt="snacker.com">
+</div>
+</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index1.php">Explore Food</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="admin/index.php">Admin</a></li>
+            <li><a class="dropdown-item" href="emp/index.php">Employee</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Employee Section
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="application.php">Apply For Job</a></li>
+            <li><a class="dropdown-item" href="application_status.php">Application Status</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form action="foodsearch.php" method="POST" class="d-flex" role="search">
+        <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search" required>
+        <input type="submit" name="submit" value="Search" class="btn btn-outline-success">
+      </form>
+    </div>
+</nav>
+
+<h1 id="sitename">SNACKER</h1>
+<section id="home">
+        <h1 class="h-primary"  style="color:aquamarine">Always Choose Good</h1>
+        <p class="h-primary">"EAT HEALTHY STAY HEALTHY". </p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
